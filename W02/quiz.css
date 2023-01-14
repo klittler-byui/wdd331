@@ -1,0 +1,27 @@
+
+/* CSS Code to hide any attribute with a value that includes "fieldset" AFTER the second fieldset ( hides fieldsets 3 - everything ) */
+
+fieldset:not(:first-of-type) {
+  color: red;
+}
+
+
+
+/*fieldset:nth-child(2n)~fieldset {
+  display: none;
+}
+
+/* [title*="fieldset"]:nth-child(2n+2) {
+  display: none;
+}
+
+/* fieldset[title=fieldset2] > p+p {
+  color: red;
+}
+
+fieldset:nth-of-type(2) >p + p {
+  color: red;
+}
+
+div.help     div .help
+/* fieldset[title*="fieldset"]*/

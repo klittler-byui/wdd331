@@ -1,0 +1,243 @@
+
+body {
+  background-color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  padding: 1rem;
+  font-size: 16px;
+  color: #000000;
+  max-width: 767px;
+  margin: 0 auto;
+
+}
+
+/* FONTS & STYLES */
+p {
+  font-family: 'Darker Grotesque', serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Cormorant Unicase', serif;
+  color: #555358; /*Davys Grey*/
+  font-size: 25px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Cormorant Unicase', serif;
+  color: #555358; /*Davys Grey*/
+  font-size: 25px;
+  /* text-shadow: 2px 2px 4px #2C3333; */
+
+}
+
+h2 {
+  font-family: 'Cormorant Unicase', serif;
+  color: #E56399; /*China Pink*/
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Darker Grotesque', sans-serif;
+  color: #CEA2AC; /*Tuscany*/
+  font-size: 15px;
+
+}
+
+h4 {
+  font-family: 'Cormorant Unicase', serif;
+  color: #555358; /* Davys Grey */
+  font-size: 15px;
+
+}
+
+h5 {
+  font-family: 'Darker Grotesque', sans-serif;
+  color: #5F6062; /*Granite Gray*/
+  font-size: 20px;
+
+}
+
+h6 {
+  font-family: 'Darker Grotesque', serif;
+  color: #CB8589; /*Old Rose*/
+  font-size: 10px;
+}
+
+
+
+a ul {
+  text-decoration: none;
+}
+
+
+/*  HOME PAGE GRID LAYOUT */
+
+
+header {
+
+  text-align: center;
+  border-radius: 16px;
+  max-width: 767px;
+  margin: 0 auto;
+  background-color: #DCEED1; /* Nyanza */
+  border-radius: 14px;
+
+  /* justify-content: center; */
+}
+
+
+
+header img{
+
+  margin: 15px 15px 0 15px;
+  padding: 0;
+  border-radius: 14px;
+  box-shadow: 2px 2px 4px #2C3333;
+  width: 150px;
+  height: auto;
+
+}
+
+.lesson-links a {
+  color: #E56399; /*China Pink*/
+  font-size: 22px;
+  font-weight: 400;
+}
+.the-list hr {
+  border-color: #AAC0AA; /* Cambridge Blue */
+  border-style: dashed;
+  border-width: thin;
+
+}
+
+footer {
+  color: black;
+
+
+}
+
+footer p{
+  background: #DCEED1; /* Nyanza */
+  text-align: center;
+  border-radius: 14px;
+  padding: 1em;
+  font-size: 14px;
+  color: black;
+
+}
+
+
+/*  Medium View for Tablets */
+
+@media only screen and (min-width: 37.5em) {
+
+
+
+  body {
+    padding: 1rem;
+    font-size: 18px;
+    color: #000000;
+    max-width: 767px;
+    margin: 0 auto;
+
+  }
+
+  /* FONTS & STYLES */
+
+
+  h1 {
+    font-size: 45px;
+  }
+
+  header h1 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 45px;
+    padding: 0;
+    margin: 4rem 0 0 0;
+
+
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+
+  }
+
+  h4 {
+    font-size: 25px;
+
+  }
+
+  h5 {
+    font-size: 20px;
+
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+
+
+  a ul {
+    text-decoration: none;
+  }
+
+
+  /*  HOME PAGE GRID LAYOUT */
+
+
+  header {
+
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    max-width: 767px;
+    margin: 0 auto;
+
+
+  }
+
+
+
+  header img{
+    grid-column: 1;
+    grid-row: 1;
+    width: 125px;
+    height: auto;
+    margin: 15px;
+
+  }
+
+  .lesson-links a {
+    color: #E56399; /*China Pink*/
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .the-list hr {
+    border-color: #DCEED1; /* Nyanza */
+    border-style: dashed;
+    border-width: thin;
+
+  }
+
+  footer {
+    color: black;
+
+
+  }
+
+  footer p{
+    background: #DCEED1; /* Nyanza */
+    text-align: center;
+    border-radius: 14px;
+    padding: 1em;
+    font-size: 14px;
+    color: black
+  }
+  }

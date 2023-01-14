@@ -49,6 +49,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #00ddff;
+}
+
+h1 a:hover {
+  color: #333;
+}
+
 
 /* Navigation */
 nav {
