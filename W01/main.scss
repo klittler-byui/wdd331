@@ -5,9 +5,13 @@ $font-fam-1: Arial, Helvetica, sans-serif;
 $font-fam-2: 'Lora', serif;
 $body-color: #333;
 $hover-color: #00ddff;
+$a-color: #666;
 $active-color:  #DEB887;
 $border-color: #d0d0d0;
-$a-color: #666;
+$border-set:  1px solid $border-color;
+$padding-regular: 20px;
+$break-small: 35em;
+
 
 body {
   background-color: $background-color;
@@ -68,8 +72,8 @@ h1 a:hover {
 
 /* Navigation */
 nav {
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-top: $border-set;
+  border-bottom: $border-set;
   text-align: center;
   line-height: 30px;
   font-size: 17px;
@@ -99,7 +103,7 @@ nav a:active {
   color: $body-color;
   font-size: 18px;
   font-weight: 500;
-  border-bottom: 1px solid $border-color;
+  border-bottom: $border-set;
   padding:32px 0 8px 0;
   text-align: right;
   font-family: $font-fam-2;
@@ -111,7 +115,7 @@ img {
   margin-right:auto;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width:$break-small) {
 nav {
   display: flex;
 }
@@ -136,12 +140,12 @@ article {
 
 .post-date {
   border-bottom: none;
-  padding: 20px;
+  padding: $padding-regular;
 }
 
 .post-content {
-  border-bottom: 1px solid $border-color;
-  border-left: 1px solid $border-color;
-  padding-left: 20px;
+  border-bottom: $border-set;
+  border-left: $border-set;
+  padding-left: $padding-regular;
 }
 }
