@@ -1,0 +1,100 @@
+//color variables
+$body-background-color: darkred;
+$form-background-color: #ddd;
+$input-color: white;
+$headlines-color: white;
+$break-small: 780px;
+$break-large: 1024px;
+
+body {
+  background-color: $body-background-color;
+}
+
+#contactform {
+  background-color: $form-background-color;
+  input, textarea {
+    background-color: $input-color;
+    flex: 2;
+  }
+  @media (min-width: $break-small) {
+    & {
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width: $break-large) {
+    & {
+      width: 70%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@mixin flex-container($axis, $wrap: nowrap) {
+  display: -webkit-box;
+  display: webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: $axis $wrap;
+  -ms-flex-flow: $axis $wrap;
+  flex-flow: $axis $wrap;
+}
+
+fieldset > div {
+  @include flex-container(column);
+}
+
+//set breakpoint size
+$break-small: 20em;
+$break-medium:31em;
+$break-large:60em;
+
+@mixin breakpoint($break) {
+  @if $break == large {
+    @media (max-width: $break-large) {@content;}
+  }
+  @else if $break==medium {
+    @media (max-width:$break-medium) {@content;}
+  }
+  @else if $break==small {
+    @media (max-width: $break-small) {@content;}
+  } @else {
+    @media ($break) {@content;}
+  }
+}
+
+/**********
+@mixin center() {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content {
+  @include center;
+}
+*******************/
+
+/* #contactform {
+  background-color:  $form-background-color;
+}
+
+#contactform input, #contactform textarea {
+  background-color: $input-color;
+} */
+
+
+// ${PATH}:/Applications/dart-sass
+// Sass   /Users/korilittler/Documents/WDD 331R/wdd331r/W03/Sass/styles.scss
+///// Relative path W03/Sass/styles.scss
+// Css folder /Users/korilittler/Documents/WDD 331R/wdd331r/W03/CSS
+///// Relative Path  W03/CSS
+///
+/// ///   sass ./Users/korilittler/Documents/WDD\ 331R/wdd331r/W03/Sass/styles.scss ./Users/korilittler/Documents/WDD\ 331R/wdd331r/W03/CSS/styles.css
+///

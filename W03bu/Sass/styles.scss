@@ -1,0 +1,20 @@
+//color variables
+$body-background-color: darkred;
+$form-background-color: white;
+$input-color: white;
+$headlines-color: white;
+
+body {
+  background-color: $body-background-color;
+}
+
+
+
+// ${PATH}:/Applications/dart-sass
+// Sass   /Users/korilittler/Documents/WDD 331R/wdd331r/W03/Sass/styles.scss
+///// Relative path W03/Sass/styles.scss
+// Css folder /Users/korilittler/Documents/WDD 331R/wdd331r/W03/CSS
+///// Relative Path  W03/CSS
+///
+/// ///   sass ./Users/korilittler/Documents/WDD\ 331R/wdd331r/W03/Sass/styles.scss ./Users/korilittler/Documents/WDD\ 331R/wdd331r/W03/CSS/styles.css
+///
