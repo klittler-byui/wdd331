@@ -1,0 +1,6 @@
+
+stylesheet.css
+ 112:20  ✖  Missed semicolon  CssSyntaxError
+
+1 problem (1 error, 0 warnings)
+
