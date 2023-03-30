@@ -1,0 +1,165 @@
+/********** COLORS **********
+****************************/
+/** Dusty Blue **/
+/** Columbia Blue **/
+/** Jonquil (yellow) **/
+/** Honeydew **/
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #4C6085;
+}
+
+nav {
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-200px);
+  height: 100%;
+  width: 300px;
+  transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+  border-radius: 0% 0% 100% 50%;
+}
+
+nav.nav-open {
+  transform: translateX(0px);
+  border-radius: 0% 0% 0% 0%;
+  background: #A7C6DA;
+}
+
+nav .menu-icon {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  padding: 0;
+  width: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+nav .menu-icon .line {
+  padding: 0;
+  width: 30px;
+  background: #fff;
+  height: 2px;
+  margin: 5px 0;
+  transition: all 700ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+nav .menu-icon:hover {
+  opacity: 50%;
+}
+
+nav .menu-icon .line.line--1 {
+  width: 30px;
+  transform: rotate(0) translateY(0);
+}
+
+nav .menu-icon .line.line--1.line-cross {
+  width: 30px;
+  transform: rotate(45deg) translateY(10px);
+  background: #4C6085;
+}
+
+nav .menu-icon .line.line--2 {
+  width: 30px;
+  transform: translateX(0);
+}
+
+nav .menu-icon .line.line--2.line-fade-out {
+  width: 30px;
+  transform: translate(30px);
+  opacity: 0;
+}
+
+nav .menu-icon .line.line--3 {
+  width: 30px;
+  transform: rotate(0) translateY(0);
+}
+
+nav .menu-icon .line.line--3.line-cross {
+  width: 30px;
+  transform: rotate(-45deg) translateY(-10px);
+  background: #4C6085;
+}
+
+a {
+  color: #4C6085;
+  text-decoration: none;
+}
+
+nav .nav-links {
+  position: absolute;
+  left: 0;
+  top: -17%;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 20px;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 50px;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 900ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+nav .nav-links.fade-in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+nav .nav-links .link {
+  margin: 20px 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #F0C808;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 300ms cubic-bezier(0.9, 0, 0.33, 1);
+}
+
+a:hover {
+  color: white;
+  /** background: $acc2; **/
+  /** padding-left: 7px; **/
+  /** transition: translateX(20px); **/
+  /** opacity: .5; **/
+}
+
+.inform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F0C808;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  line-height: 50px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.inform p {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 200;
+  color: #E8F7EE;
+  text-transform: capitalize;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/*# sourceMappingURL=portStyle.css.map */
