@@ -3,5 +3,6 @@
     "Bootstrappy",
     "littlecolorado",
     "Nyanza"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
